@@ -9,11 +9,23 @@ Paula Hernández G. - B53375
 Yasser Wagon M. - B47732 
 
 
-# Para HelloWorld2
+# Para HelloWorld2 (imprimir en orden)
 
   mpicc HelloWorld2.c -o hello
  
  mpiexec -n 6 ./hello
+ 
+ # Pregunta2.c Enviar y recibir 
+ 
+  mpicc Pregunta2.c -o preg2
+ 
+ mpiexec -n 2 ./preg2
+ 
+  # Anillo 
+ 
+  mpicc Ejercicio3_anillo.c -o anillo
+ 
+ mpiexec -n 4 ./anillo
  
 # Para Scatter/Gather ( recibe por parámetro N , en este caso 8)
 
